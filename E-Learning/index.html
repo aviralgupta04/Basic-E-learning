@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLearning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to eLearning Platform</h1>
+        <p>Learn at your own pace with our expert-curated courses.</p>
+        <a href="#courses" class="btn nav-link">Browse Courses</a>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-card" data-course="Web Development">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript and more!</p>
+            <a href="#" class="btn course-detail-btn">More Details</a>
+        </div>
+        <div class="course-card" data-course="Data Science">
+            <h3>Data Science</h3>
+            <p>Master Python, Data Analysis, Machine Learning.</p>
+            <a href="#" class="btn course-detail-btn">More Details</a>
+        </div>
+        <div class="course-card" data-course="Mobile App Development">
+            <h3>Mobile App Development</h3>
+            <p>Learn Android and iOS development.</p>
+            <a href="#" class="btn course-detail-btn">More Details</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing quality online education to help you achieve your career goals.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 eLearning Platform. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Course Detail Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <a href="#" class="btn">Enroll Now</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
